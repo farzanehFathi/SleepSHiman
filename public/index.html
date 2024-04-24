@@ -3,10 +3,196 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2ea94c071b.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>کالای خواب شیمانا</title>
   </head>
-  <body>
-    <div>کالای خواب شیمانا</div>
+  <body class="font-body bg-gray-20 text-gray-30 font-bold">
+    <div class="container">
+      <nav class="px-16 pt-10 pb-6">
+        <div class="flex justify-between items-center">
+          <a href="/">
+            <div class="flex items-center">
+              <div class="ml-4">
+                <img src="/img/logo.png" width="64px" alt="کالای خواب شیمانا" />
+              </div>
+              <div>
+                <h1>
+                  <span class="font-bold text-gray-200">Sleep</span
+                  ><span class="font-bold text-branding">SHiman</span>
+                </h1>
+                <h2>کالای خواب شیمانا</h2>
+              </div>
+            </div>
+          </a>
+          <div class="flex justify-end items-center">
+            <div class="md:border md:border-gray-10 md:rounded-full flex">
+              <div class="w-0 md:w-48 lg:w-128 p-3">جستجو...</div>
+              <div
+                class="border rounded-full md:border-r md:rounded-s-full border-gray-10 h-12 w-12 p-3 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <div
+              class="mr-3 p-3 rounded-full bg-accent-secondary-200 h-12 w-12 flex items-center justify-center"
+            >
+              <i class="fa-solid fa-bag-shopping text-white text-lg"></i>
+            </div>
+            <div
+              class="mr-3 txt-dark bg-white py-3 px-12 rounded-full shadow-md"
+            >
+              حساب کاربری
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center bg-white shadow-lg rounded-full mt-6 mb-6 p-3 pl-10"
+        >
+          <div class="flex items-center">
+            <div class="py-3 px-6 ml-3 rounded-full bg-branding text-white">
+              دسته بندی
+            </div>
+            <div
+              class="text-gray-200 bg-transparent border-gray-10 rounded-full py-3 px-8"
+            >
+              پرفروش ترین
+            </div>
+            <ul class="flex text-sm">
+              <li class="my-3 px-3 border-l border-gray-10">
+                <a href="#">نحوه ارسال</a>
+              </li>
+              <li class="my-3 px-3 border-l border-gray-10">
+                <a href="#">تماس با ما</a>
+              </li>
+              <li class="my-3 px-3"><a href="#">درباره ما</a></li>
+            </ul>
+          </div>
+          <div class="text-sm flex justify-end items-center">
+            <i
+              class="fa-solid fa-location-dot text-accent-primary-100 text-2xl ml-3"
+            ></i>
+            <div>
+              <div class="text-gray-200">اصفهان</div>
+              <div>آدرس خود را انتخاب کنید</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex p-6 pb-0">
+          <div class="ml-3">خانه</div>
+          <div class="ml-3">></div>
+          <div class="text-gray-200">مقالات</div>
+        </div>
+      </nav>
+
+      <main>
+        <div class="bg-branding text-white font-bold text-3xl py-8 px-36">
+          جدیدترین مقالات ویژه سایت
+        </div>
+        <div class="tags flex items-center py-8 px-36">
+          <div
+            class="text-gray-200 border-r-8 border-accent-primary-200 px-3 my-3"
+          >
+            مـهـمتـریـن
+            <br />
+            برچسب ها:
+          </div>
+          <div class="flex">
+            <div
+              class="rounded-xl border-2 border-accent-primary-200 bg-accent-primary-100 text-white shadow-orange-200 shadow-xl py-3 px-6 ml-3"
+            >
+              افزایش کیفیت خواب
+            </div>
+            <div
+              class="rounded-xl border border-accent-primary-200 text-accent-primary-200 py-3 px-6 ml-3"
+            >
+              راهنمای خرید
+            </div>
+            <div
+              class="rounded-xl border border-accent-primary-200 text-accent-primary-200 py-3 px-6 ml-3"
+            >
+              راهنمای نگهداری و شستشو
+            </div>
+            <div
+              class="rounded-xl border border-accent-primary-200 text-accent-primary-200 py-3 px-6 ml-3"
+            >
+              درد کمر
+            </div>
+            <div
+              class="rounded-xl border border-accent-primary-200 text-accent-primary-200 py-3 px-6 ml-3"
+            >
+              درد گردن
+            </div>
+          </div>
+        </div>
+
+        <div class="flex mx-40 my-10">
+          <div class="card w-1/2 mx-2 p-3 bg-white shadow-lg rounded-lg">
+            <img
+              src="/img/good-sleep.jpg"
+              alt="بیدار شدن از خواب در شب"
+              class="w-full h-48 sm:h-64 object-cover rounded-lg"
+            />
+            <div class="mt-5">
+              <h5 class="text-sm text-gray-10">Good Sleep</h5>
+              <h2 class="text-gray-200 text-2xl mb-4">
+                ۷ دلیل مهم بیدار شدن در نیمه شب
+              </h2>
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                برای طراحان رایانه ای مورد نیاز است.
+              </p>
+            </div>
+          </div>
+          <div class="card w-1/2 mx-2 p-3 bg-white shadow-lg rounded-lg">
+            <img
+              src="/img/good-sleep.jpg"
+              alt="بیدار شدن از خواب در شب"
+              class="w-full h-48 sm:h-64 object-cover rounded-lg"
+            />
+            <div class="mt-5">
+              <h5 class="text-sm text-gray-10">Good Sleep</h5>
+              <h2 class="text-gray-200 text-2xl my-4">
+                ۷ دلیل مهم بیدار شدن در نیمه شب
+              </h2>
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                برای طراحان رایانه ای مورد نیاز است.
+              </p>
+            </div>
+            <div class="mt-8 flex items-center justify-between">
+              <div></div>
+
+              <div class="flex items-center justify-end">
+                <div class="ml-8 flex items-center">
+                  ۲۴ دی ۰۲ <i class="fa-solid fa-calendar-days mr-2"></i>
+                </div>
+
+                <div
+                  class="bg-accent-secondary-100 text-white p-3 rounded-md flex items-center"
+                >
+                  مطالعه بیشتر <i class="fa-solid fa-arrow-left mr-5"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
