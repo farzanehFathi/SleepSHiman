@@ -5,6 +5,52 @@
 @tailwind utilities;
 
 body {
-  font-family: vazirmatn;
-  color: red;
+  font-family: Vazirmatn;
+  background: #fbfbfb;
+  color: #939393;
+}
+
+/* ___________ Color Classes ___________ */
+.txt-branding {
+  color: #0053f7;
+}
+
+.txt-light {
+  color: #4f4f4f;
+}
+
+.txt-dark {
+  color: #2c2c2c;
+}
+
+.bg-branding {
+  background: #0053f7;
+  color: white;
+}
+
+.bg-accent {
+  background: #ff8900;
+  color: white;
+}
+
+/* ___________ Elements' Classes ___________ */
+
+.active-tags {
+  color: white;
+  background: #ffa229;
+  border: #ff8900 1px solid;
+  border-radius: 5px;
+}
+
+.inactive-tags {
+  color: #ff8900;
+  background: transparent;
+  border: #ff8900 1px solid;
+  border-radius: 5px;
+}
+
+.read-more-btn {
+  color: white;
+  background: #45d541;
+  border-radius: 5px;
 }
