@@ -3,6 +3,15 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
+      boxShadow: {
+        green: {
+          1: "5px 5px 0 0 rgba(98, 197, 57, 0.7)",
+          2: "80px 0 0 80px rgba(215, 240, 210, 0.3)",
+          3: "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
+          4: "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
+        },
+      },
+
       spacing: {
         128: "32rem",
       },
