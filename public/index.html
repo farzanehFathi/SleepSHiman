@@ -7,7 +7,7 @@
       src="https://kit.fontawesome.com/2ea94c071b.js"
       crossorigin="anonymous"
     ></script>
-
+    <link rel="shortcut icon" type="image/jpg" href="/img/favicon.png" />
     <link rel="stylesheet" href="styles.css" />
     <title>کالای خواب شیمانا</title>
   </head>
@@ -18,14 +18,20 @@
           <a href="/">
             <div class="flex items-center">
               <div class="ml-4">
-                <img src="/img/logo.png" width="64px" alt="کالای خواب شیمانا" />
+                <img
+                  src="/img/favicon.png"
+                  width="64px"
+                  alt="کالای خواب شیمانا"
+                />
               </div>
               <div>
-                <h1>
+                <h1 style="font-size: 20px; font-weight: 700">
                   <span class="font-bold text-gray-200">Sleep</span
                   ><span class="font-bold text-branding">SHiman</span>
                 </h1>
-                <h2>کالای خواب شیمانا</h2>
+                <h2 style="font-size: 16px; font-weight: 700">
+                  کالای خواب شیمانا
+                </h2>
               </div>
             </div>
           </a>
@@ -57,13 +63,31 @@
           class="flex justify-between items-center bg-white shadow-lg rounded-full mt-6 mb-6 p-3 pl-10"
         >
           <div class="flex items-center">
-            <div class="py-3 px-6 ml-3 rounded-full bg-branding text-white">
+            <div
+              class="py-2 px-2 ml-3 rounded-full bg-branding text-white flex items-center justify-center"
+            >
+              <img src="/img/categoris.png" class="h-8 w-8 ml-2" alt="" />
               دسته بندی
+
+              <a href="#">
+                <i class="fa-solid fa-angle-down px-4 text-xs"></i
+              ></a>
             </div>
             <div
-              class="text-gray-200 bg-transparent border-gray-10 rounded-full py-3 px-8"
+              class="flex justify-start items-center text-gray-200 bg-transparent border border-gray-10 rounded-full py-2 px-2"
             >
-              پرفروش ترین
+              <div
+                class="ml-2 bg-accent-primary-200 text-white text-lg h-8 w-8 rounded-full shadow-lg shadow-orange-200 flex justify-center items-center"
+              >
+                <i class="fa-solid fa-fire"></i>
+              </div>
+              <h4>پرفروش ترین</h4>
+              <a
+                href="#"
+                class="h-4 w-10 text-md bg-accent-primary-200 text-white text-sm flex items-center justify-center mx-2 rounded-full"
+              >
+                ۲۵۵
+              </a>
             </div>
             <ul class="flex text-sm">
               <li class="my-3 px-3 border-l border-gray-10">
@@ -88,7 +112,7 @@
 
         <div class="flex p-6 pb-0">
           <div class="ml-3">خانه</div>
-          <div class="ml-3">></div>
+          <div class="ml-3"><i class="fa-solid fa-angle-left text-xs"></i></div>
           <div class="text-gray-200">مقالات</div>
         </div>
       </nav>
@@ -97,7 +121,9 @@
         <div class="bg-branding text-white font-bold text-3xl py-8 px-36">
           جدیدترین مقالات ویژه سایت
         </div>
-        <div class="tags flex items-center py-8 px-36">
+
+        <!-- TAGS -->
+        <div class="flex items-center py-8 px-36">
           <div
             class="text-gray-200 border-r-8 border-accent-primary-200 px-3 my-3"
           >
@@ -105,37 +131,50 @@
             <br />
             برچسب ها:
           </div>
-          <div class="flex">
-            <div
-              class="rounded-xl border-2 border-accent-primary-200 bg-accent-primary-100 text-white shadow-orange-200 shadow-xl py-3 px-6 ml-3"
+          <ul class="flex">
+            <a href="#">
+              <li
+                class="rounded-xl border-2 border-accent-primary-200 bg-accent-primary-100 text-white shadow-orange-200 shadow-xl py-3 px-6 ml-3"
+              >
+                افزایش کیفیت خواب
+              </li></a
             >
-              افزایش کیفیت خواب
-            </div>
-            <div
-              class="rounded-xl border border-accent-primary-200 text-accent-primary-200 py-3 px-6 ml-3"
+            <a href="#">
+              <li
+                class="rounded-xl border border-accent-primary-200 text-accent-primary-200 py-3 px-6 ml-3"
+              >
+                راهنمای خرید
+              </li></a
             >
-              راهنمای خرید
-            </div>
-            <div
-              class="rounded-xl border border-accent-primary-200 text-accent-primary-200 py-3 px-6 ml-3"
+            <a href="#">
+              <li
+                class="rounded-xl border border-accent-primary-200 text-accent-primary-200 py-3 px-6 ml-3"
+              >
+                راهنمای نگهداری و شستشو
+              </li></a
             >
-              راهنمای نگهداری و شستشو
-            </div>
-            <div
-              class="rounded-xl border border-accent-primary-200 text-accent-primary-200 py-3 px-6 ml-3"
+            <a href="#">
+              <li
+                class="rounded-xl border border-accent-primary-200 text-accent-primary-200 py-3 px-6 ml-3"
+              >
+                درد کمر
+              </li></a
             >
-              درد کمر
-            </div>
-            <div
-              class="rounded-xl border border-accent-primary-200 text-accent-primary-200 py-3 px-6 ml-3"
+            <a href="#">
+              <li
+                class="rounded-xl border border-accent-primary-200 text-accent-primary-200 py-3 px-6 ml-3"
+              >
+                درد گردن
+              </li></a
             >
-              درد گردن
-            </div>
-          </div>
+          </ul>
         </div>
+        <!-- END OF TAGS -->
 
+        <!-- CARDS -->
         <div class="flex mx-40 my-10">
-          <div class="card w-1/2 mx-2 p-3 bg-white shadow-lg rounded-lg">
+          <!-- CARD START -->
+          <div class="card w-1/2 mx-2 p-6 bg-white shadow-lg rounded-lg">
             <img
               src="/img/good-sleep.jpg"
               alt="بیدار شدن از خواب در شب"
@@ -143,32 +182,10 @@
             />
             <div class="mt-5">
               <h5 class="text-sm text-gray-10">Good Sleep</h5>
-              <h2 class="text-gray-200 text-2xl mb-4">
+              <h3 class="text-gray-200 text-2xl mb-4">
                 ۷ دلیل مهم بیدار شدن در نیمه شب
-              </h2>
-              <p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
-                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
-                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
-                جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
-                برای طراحان رایانه ای مورد نیاز است.
-              </p>
-            </div>
-          </div>
-          <div class="card w-1/2 mx-2 p-3 bg-white shadow-lg rounded-lg">
-            <img
-              src="/img/good-sleep.jpg"
-              alt="بیدار شدن از خواب در شب"
-              class="w-full h-48 sm:h-64 object-cover rounded-lg"
-            />
-            <div class="mt-5">
-              <h5 class="text-sm text-gray-10">Good Sleep</h5>
-              <h2 class="text-gray-200 text-2xl my-4">
-                ۷ دلیل مهم بیدار شدن در نیمه شب
-              </h2>
-              <p>
+              </h3>
+              <p class="text-justify">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
                 استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
                 در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
@@ -179,7 +196,16 @@
               </p>
             </div>
             <div class="mt-8 flex items-center justify-between">
-              <div></div>
+              <div class="flex justify-start">
+                <i
+                  class="fa-solid fa-circle-user bg-gray-200 text-red-600 text-5xl rounded-full"
+                ></i>
+
+                <div class="text-sm pr-3 self-center">
+                  <h4 class="text-gray-200">اشکال رضایی مهر</h4>
+                  <h4>نویسنده</h4>
+                </div>
+              </div>
 
               <div class="flex items-center justify-end">
                 <div
@@ -187,17 +213,466 @@
                 >
                   ۲۴ دی ۰۲ <i class="fa-solid fa-calendar-days mr-2"></i>
                 </div>
-
-                <div
-                  class="bg-accent-secondary-100 text-white p-3 rounded-md flex items-center"
-                >
-                  مطالعه بیشتر <i class="fa-solid fa-arrow-left mr-5"></i>
-                </div>
+                <a href="#">
+                  <div
+                    class="bg-accent-secondary-100 text-white p-3 rounded-md flex items-center"
+                  >
+                    مطالعه بیشتر
+                    <i class="fa-solid fa-arrow-left mr-5"></i></div
+                ></a>
               </div>
             </div>
           </div>
+          <!-- END OF CARD -->
+
+          <!-- CARD START -->
+          <div class="card w-1/2 mx-2 p-6 bg-white shadow-lg rounded-lg">
+            <img
+              src="/img/good-sleep.jpg"
+              alt="بیدار شدن از خواب در شب"
+              class="w-full h-48 sm:h-64 object-cover rounded-lg"
+            />
+            <div class="mt-5">
+              <h5 class="text-sm text-gray-10">Good Sleep</h5>
+              <h3 class="text-gray-200 text-2xl mb-4">
+                ۷ دلیل مهم بیدار شدن در نیمه شب
+              </h3>
+              <p class="text-justify">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
+                برای طراحان رایانه ای مورد نیاز است.
+              </p>
+            </div>
+            <div class="mt-8 flex items-center justify-between">
+              <div class="flex justify-start">
+                <i
+                  class="fa-solid fa-circle-user bg-gray-200 text-red-600 text-5xl rounded-full"
+                ></i>
+                <div class="text-sm pr-3 self-center">
+                  <h4 class="text-gray-200">اشکال رضایی مهر</h4>
+                  <h4>نویسنده</h4>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-end">
+                <div
+                  class="ml-8 flex items-center text-sm text-gray-200 font-normal"
+                >
+                  ۲۴ دی ۰۲ <i class="fa-solid fa-calendar-days mr-2"></i>
+                </div>
+                <a href="#">
+                  <div
+                    class="bg-accent-secondary-100 text-white p-3 rounded-md flex items-center"
+                  >
+                    مطالعه بیشتر
+                    <i class="fa-solid fa-arrow-left mr-5"></i></div
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- END OF CARD -->
         </div>
+        <!-- END OF CARDS -->
+
+        <!-- مقالات منتشر شده -->
+        <div class="m-32">
+          <div class="flex justify-start items-center mb-6">
+            <img src="/img/circle.png" alt="" class="ml-2 h-8" />
+            <h2 class="text-2xl text-gray-200">مقالات منتشر شده</h2>
+          </div>
+          <div class="flex justify-between items-top">
+            <!-- CARDS 2 -->
+            <div class="w-7/12">
+              <!-- CARD START -->
+              <div
+                class="flex justify-between items-center w-100 bg-white rounded-lg p-3 mb-6"
+              >
+                <div class="w-3/6 ml-3">
+                  <img
+                    src="/img/sleeping.jpg"
+                    alt="چند روش برای راحت خوابیدن"
+                    class="w-full h-52 object-cover rounded-md"
+                  />
+                </div>
+                <div class="flex-col justify-between w-full">
+                  <h5 class="text-sm text-gray-10">Good Sleep</h5>
+                  <h3 class="text-gray-200 text-xl mb-4">
+                    چند روش برای راحت تر خوابیدن!
+                  </h3>
+
+                  <div class="mt-16 flex items-center justify-between">
+                    <div class="flex justify-start">
+                      <i
+                        class="fa-solid fa-circle-user bg-gray-200 text-blue-400 text-5xl rounded-full"
+                      ></i>
+                      <div class="text-sm pr-3 self-center">
+                        <h4 class="text-gray-200">فاطمه آذرخش</h4>
+                        <h4>نویسنده</h4>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                      <div class="ml-8 text-sm text-gray-200 text-center">
+                        <i
+                          class="fa-regular fa-comment text-accent-secondary-200"
+                        ></i>
+                        <br />
+                        ۱۵
+                      </div>
+                      <div class="ml-8 text-sm text-gray-200 text-center">
+                        <i
+                          class="fa-solid fa-calendar-days mr-2 text-yellow-600"
+                        ></i>
+                        <br />
+                        ۲۴ دی ۰۲
+                      </div>
+                      <a href="#">
+                        <div
+                          class="text-gray-100 border border-gray-10 p-3 rounded-md flex items-center justify-center w-12 h-12"
+                        >
+                          <i class="fa-solid fa-arrow-left"></i></div
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END OF CARD -->
+
+              <!-- CARD START -->
+              <div
+                class="flex justify-between items-center w-100 bg-white rounded-lg p-3 mb-6"
+              >
+                <div class="w-3/6 ml-3">
+                  <img
+                    src="/img/sleeping.jpg"
+                    alt="چند روش برای راحت خوابیدن"
+                    class="w-full h-52 object-cover rounded-md"
+                  />
+                </div>
+                <div class="flex-col justify-between w-full">
+                  <h5 class="text-sm text-gray-10">Good Sleep</h5>
+                  <h3 class="text-gray-200 text-xl mb-4">
+                    چند روش برای راحت تر خوابیدن!
+                  </h3>
+
+                  <div class="mt-16 flex items-center justify-between">
+                    <div class="flex justify-start">
+                      <i
+                        class="fa-solid fa-circle-user bg-gray-200 text-blue-400 text-5xl rounded-full"
+                      ></i>
+                      <div class="text-sm pr-3 self-center">
+                        <h4 class="text-gray-200">فاطمه آذرخش</h4>
+                        <h4>نویسنده</h4>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                      <div class="ml-8 text-sm text-gray-200 text-center">
+                        <i
+                          class="fa-regular fa-comment text-accent-secondary-200"
+                        ></i>
+                        <br />
+                        ۱۵
+                      </div>
+                      <div class="ml-8 text-sm text-gray-200 text-center">
+                        <i
+                          class="fa-solid fa-calendar-days mr-2 text-yellow-600"
+                        ></i>
+                        <br />
+                        ۲۴ دی ۰۲
+                      </div>
+                      <a href="#">
+                        <div
+                          class="text-gray-100 border border-gray-10 p-3 rounded-md flex items-center justify-center w-12 h-12"
+                        >
+                          <i class="fa-solid fa-arrow-left"></i></div
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END OF CARD -->
+
+              <!-- CARD START -->
+              <div
+                class="flex justify-between items-center w-100 bg-white rounded-lg p-3"
+              >
+                <div class="w-3/6 ml-3">
+                  <img
+                    src="/img/sleeping.jpg"
+                    alt="چند روش برای راحت خوابیدن"
+                    class="w-full h-52 object-cover rounded-md"
+                  />
+                </div>
+                <div class="flex-col justify-between w-full">
+                  <h5 class="text-sm text-gray-10">Good Sleep</h5>
+                  <h3 class="text-gray-200 text-xl">
+                    چند روش برای راحت تر خوابیدن!
+                  </h3>
+
+                  <div class="mt-16 flex items-center justify-between">
+                    <div class="flex justify-start">
+                      <i
+                        class="fa-solid fa-circle-user bg-gray-200 text-blue-400 text-5xl rounded-full"
+                      ></i>
+                      <div class="text-sm pr-3 self-center">
+                        <h4 class="text-gray-200">فاطمه آذرخش</h4>
+                        <h4>نویسنده</h4>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center justify-end">
+                      <div class="ml-8 text-sm text-gray-200 text-center">
+                        <i
+                          class="fa-regular fa-comment text-accent-secondary-200"
+                        ></i>
+                        <br />
+                        ۱۵
+                      </div>
+                      <div class="ml-8 text-sm text-gray-200 text-center">
+                        <i
+                          class="fa-solid fa-calendar-days mr-2 text-yellow-600"
+                        ></i>
+                        <br />
+                        ۲۴ دی ۰۲
+                      </div>
+                      <a href="#">
+                        <div
+                          class="text-gray-100 border border-gray-10 p-3 rounded-md flex items-center justify-center w-12 h-12"
+                        >
+                          <i class="fa-solid fa-arrow-left"></i></div
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END OF CARD -->
+
+              <div class="flex justify-center items-center py-10">
+                <div
+                  class="bg-white rounded-full h-10 w-10 text-md text-branding flex items-center justify-center mx-2 border border-branding"
+                >
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div
+                  class="bg-white rounded-full h-10 w-10 text-md text-gray-30 flex items-center justify-center mx-2"
+                >
+                  ۴
+                </div>
+                <div
+                  class="bg-white rounded-full h-10 w-10 text-md text-gray-30 flex items-center justify-center mx-2"
+                >
+                  ۳
+                </div>
+                <div
+                  class="bg-white rounded-full h-10 w-10 text-md text-gray-30 flex items-center justify-center mx-2"
+                >
+                  ۲
+                </div>
+
+                <div
+                  class="bg-branding rounded-full h-10 w-10 text-md text-white flex items-center justify-center mx-2"
+                >
+                  ۱
+                </div>
+                <div
+                  class="bg-white rounded-full h-10 w-10 text-md text-branding flex items-center justify-center mx-2 border border-branding"
+                >
+                  <i class="fa-solid fa-angle-left"></i>
+                </div>
+              </div>
+            </div>
+            <!-- END OF CARDS 2 -->
+
+            <!-- آخرین مقالات -->
+            <div class="w-5/12 flex-col pr-6">
+              <div class="rounded-3xl bg-gray-5 px-6 py-10 shadow-lg">
+                <h2 class="text-2xl mb-6">
+                  <i class="fa-solid fa-diamond text-branding ml-2 text-sm"></i>
+                  <span class="text-gray-200">آخرین</span>
+                  <span class="text-branding">مقالات</span>
+                </h2>
+
+                <div
+                  class="bg-white rounded-xl p-5 text-gray-200 relative mt-2"
+                >
+                  <div class="text-branding text-2xl absolute -right-1">-</div>
+
+                  تشک خوشخواب دو نفره برای چه کسانی است؟
+                </div>
+                <div class="bg-white rounded-xl p-5 relative mt-2">
+                  <div class="text-2xl absolute -right-1">-</div>
+
+                  تشک خوشخواب دو نفره برای چه کسانی است؟
+                </div>
+                <div class="bg-white rounded-xl p-5 relative mt-2">
+                  <div class="text-2xl absolute -right-1">-</div>
+
+                  تشک خوشخواب دو نفره برای چه کسانی است؟
+                </div>
+                <div class="bg-white rounded-xl p-5 relative mt-2">
+                  <div class="text-2xl absolute -right-1">-</div>
+
+                  تشک خوشخواب دو نفره برای چه کسانی است؟
+                </div>
+                <div class="bg-white rounded-xl p-5 relative mt-2">
+                  <div class="text-2xl absolute -right-1">-</div>
+
+                  تشک خوشخواب دو نفره برای چه کسانی است؟
+                </div>
+              </div>
+              <div class="rounded-xl bg-gray-5 px-6 py-8 shadow-lg mt-6">
+                <div
+                  class="flex justify-between items-center rounded-full border border-gray-10 p-4"
+                >
+                  جستجو...
+
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+              <div
+                class="rounded-xl bg-red-10 text-white p-4 shadow-lg mt-6 flex justify-start items-center text-2xl"
+              >
+                <i class="fa-brands fa-instagram ml-5 text-4xl"></i>
+                به جامعه ۵+ میلیونی ما بپیوندید
+              </div>
+            </div>
+            <!-- پایان آخرین مقالات -->
+          </div>
+        </div>
+        <!-- پایان مقالات منتشر شده -->
       </main>
+      <footer
+        class="mx-16 mt-16 flex bg-gray-5 px-6 py-12 rounded-3xl flex justify-start items-top"
+      >
+        <div class="w-5/12">
+          <h2 class="text-4xl mb-3">
+            <span class="text-gray-200">Sleep</span
+            ><span class="text-branding">SHiman</span>
+          </h2>
+          <p class="text-justify text-gray-200">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+            و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+            زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+            متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
+            رایانه ای مورد نیاز است.
+          </p>
+          <div class="flex justify-between items-center mt-6">
+            <div
+              class="flex justify-start bg-white text-gray-100 p-3 rounded-full shadow-lg"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-gray-5 text-xl flex justify-center items-center"
+              >
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="mr-3 ml-10">
+                <h3 class="text-xl text-gray-200">
+                  <span>۳۱۳۲</span>
+                  <span>۴۵۱۲ -</span>
+                  <span class="text-accent-primary-200">۰۲۱</span>
+                </h3>
+                <p class="text-xs">خدمات و پشتیبانی ۲۴ ساعته!</p>
+              </div>
+            </div>
+            <div
+              class="flex justify-start bg-white text-gray-100 p-3 rounded-full shadow-lg"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-orange-200 text-xl flex justify-center items-center"
+              >
+                <i class="fa-solid fa-location-dot text-accent-primary-200"></i>
+              </div>
+              <div class="mr-3 ml-16">
+                <h3 class="text-md text-gray-200">اصفهان</h3>
+                <p class="text-xs">خیابان ولیعصر، بین کاظمی</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex justify-between items-center bg-white text-gray-100 p-3 rounded-full shadow-lg mt-6"
+          >
+            <div class="flex justify-start items-center">
+              <div
+                class="w-12 h-12 rounded-full bg-blue-100 text-xl flex justify-center items-center"
+              >
+                <i class="fa-regular fa-paper-plane text-branding"></i>
+              </div>
+
+              <h3 class="text-lg text-gray-200 mr-3">خبرنامه‌:</h3>
+              <p class="text-md mr-3">ایمیل خود را وارد کنید...</p>
+            </div>
+            <div
+              class="bg-branding text-white text-lg flex justify-center items-center h-12 px-6 rounded-full"
+            >
+              عضویت
+            </div>
+          </div>
+        </div>
+        <div class="flex-col w-2/12 h-12 pr-8">
+          <div class="flex justify-start items-center mb-8">
+            <img src="/img/circle.png" alt="" class="ml-2 h-8" />
+            <h2 class="text-xl text-gray-200">راهنمای مشتریان</h2>
+          </div>
+          <ul class="text-sm pr-2">
+            <a href="#">
+              <li
+                class="pr-6 text-branding py-2 mb-3 bg-blue-100 border border-blue-200 rounded-full"
+              >
+                درباره ما
+              </li></a
+            >
+            <a href="#"> <li class="pr-6 py-2 mb-3">مشتریان ما</li></a>
+            <a href="#"> <li class="pr-6 py-2 mb-3">لیست قیمت</li></a>
+            <a href="#"> <li class="pr-6 py-2 mb-3">بلاگ</li></a>
+            <a href="#"> <li class="pr-6 py-2 mb-3">لیست قیمت</li></a>
+            <a href="#"> <li class="pr-6 py-2 mb-3">بلاگ</li></a>
+          </ul>
+        </div>
+        <div class="flex-col w-2/12 h-12 pr-10">
+          <div class="flex justify-start items-center mb-8">
+            <img src="/img/circle.png" alt="" class="ml-2 h-8" />
+            <h2 class="text-xl text-gray-200">محصولات ما</h2>
+          </div>
+          <ul class="text-sm pr-2">
+            <a href="#"> <li class="pr-6 py-2 mb-3">درباره ما</li></a>
+            <a href="#"> <li class="pr-6 py-2 mb-3">مشتریان ما</li></a>
+            <a href="#"> <li class="pr-6 py-2 mb-3">لیست قیمت</li></a>
+            <a href="#"> <li class="pr-6 py-2 mb-3">بلاگ</li></a>
+            <a href="#"> <li class="pr-6 py-2 mb-3">لیست قیمت</li></a>
+            <a href="#"> <li class="pr-6 py-2 mb-3">بلاگ</li></a>
+          </ul>
+        </div>
+        <div class="w-3/12 pr-10">
+          <div class="flex justify-between items-center">
+            <div
+              class="bg-white rounded-md flex justify-center items-center h-40 w-full ml-4"
+            >
+              <img src="/img/namad.png" alt="" />
+            </div>
+
+            <img src="/img/enamad.png" alt="" class="h-40 rounded-md" />
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <div
+              class="bg-white rounded-md flex justify-center items-center h-40 w-full ml-4"
+            >
+              <img src="/img/namad.png" alt="" />
+            </div>
+
+            <img src="/img/enamad.png" alt="" class="h-40 rounded-md" />
+          </div>
+        </div>
+      </footer>
+      <p class="mt-6 mb-10 text-center text-sm text-gray-100">
+        تمامی محتوا متعلق به مهزیار رازه می‌باشد.
+      </p>
     </div>
   </body>
 </html>
