@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
+      backgroundImage: {
+        hero: "url('/img/header.png')",
+      },
       boxShadow: {
         green: {
           1: "5px 5px 0 0 rgba(98, 197, 57, 0.7)",
